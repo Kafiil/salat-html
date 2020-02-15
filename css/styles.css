@@ -1,0 +1,94 @@
+/* Partials */
+@import url("/css/partials/_reset.css");
+@import url("/css/partials/_variables.css");
+@import url("/css/partials/_font.css");
+
+body {
+  font-family: "Roboto";
+  height: 100vh;
+  font-size: 18px;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  background-color: #4d94ff;
+}
+
+/* NAVBAR */
+.main-nav {
+  display: flex;
+  align-items: center;
+  background-color: #eae8e8;
+  border-bottom: solid 1px grey;
+  padding: 10px;
+}
+
+.main-nav > ul.menu {
+  display: none;
+}
+
+/* CONTENT */
+.container {
+  height: 80%;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+.container > ul.nav-infos {
+  width: 95%;
+  margin: 40px auto;
+  flex: 1;
+}
+.container > ul.nav-infos > li.infos {
+  display: flex;
+}
+
+.container > ul.nav-infos > li.infos > .name,
+.container > ul.nav-infos > li.infos > .remains,
+.container > ul.nav-infos > li.infos > .time {
+  flex: 1;
+}
+
+footer {
+  background-color: #eae8e8;
+  border-top: solid 1px grey;
+  padding: 0.5em 0.1em;
+  text-align: center;
+}
+
+footer > ul.socials {
+  display: flex;
+}
+
+footer > ul.socials > li {
+  flex-basis: 33%;
+}
+
+/* MEDIA QUERIES */
+/* TABLET */
+@media screen and (min-width: 576px) {
+  body {
+    font-size: 18px;
+  }
+
+  .main-nav > ul.menu {
+    display: flex;
+    font-size: 0.9em;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .main-nav > ul.menu > li {
+    margin: 5px 10px;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 20px;
+  }
+}
